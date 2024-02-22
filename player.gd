@@ -1,13 +1,12 @@
 extends RigidBody2D
-
-
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass
+	var test = 5
+	if test > 2:
+		print (str(test) + ", 2'den büyüktür.")
+	elif test ==2:
+		print (str(test) + ", 2'ye eşittir.")
+	else:
+		print (str(test) + ", 2'den küçüktür.")
 
-func _process(delta):
-	pass
-	
-func _physics_process(delta):
-	apply_force(Vector2(25,0))
 	
