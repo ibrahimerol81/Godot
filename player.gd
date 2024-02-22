@@ -3,10 +3,11 @@ extends RigidBody2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	test()
+	pass
 
-func test():
-	var bir = 5
-	var iki = 7
-	var sonuc = bir + iki
-	print(str(bir) + " ile "+str(iki) + " toplamı: " + str(sonuc))
+func _process(delta):
+	pass
+	
+func _physics_process(delta):
+	apply_force(Vector2(25,0))
+	
